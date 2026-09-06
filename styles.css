@@ -78,8 +78,8 @@ h2 { margin-bottom: 0; font-size: clamp(3rem, 6vw, 5.75rem); line-height: 0.94; 
 h2 em { font-family: var(--serif); font-weight: 400; }
 h2 em { color: var(--green); }
 .arrow-link { color: var(--ink); font-size: 14px; font-weight: 700; white-space: nowrap; }
-.arrow-link span { margin-left: 8px; color: var(--orange); font-size: 17px; transition: margin 180ms ease; }
-.arrow-link:hover span { margin-left: 13px; }
+.arrow-link span { display: inline-block; margin-left: 8px; color: var(--orange); font-size: 17px; transition: transform 180ms ease; }
+.arrow-link:hover span { transform: translate(4px, -2px); }
 
 .project-section { padding-top: 125px; padding-bottom: 125px; border-top: 1px solid var(--line); }
 .project-section-workout { background: #161914; }
@@ -112,10 +112,13 @@ h2 em { color: var(--green); }
 
 .about-heading { margin-bottom: 75px; }
 .about-heading h2 em { color: var(--blue); }
-.about-grid { max-width: 720px; }
+.about-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr); gap: clamp(48px, 8vw, 100px); align-items: start; }
 .about-statement { max-width: 640px; }
 .about-statement p { margin-bottom: 24px; font-size: clamp(1.3rem, 2.2vw, 1.75rem); line-height: 1.35; letter-spacing: -0.025em; }
-.about-links { margin-top: 32px; }
+.about-links { display: grid; align-content: start; }
+.about-links .arrow-link { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 18px 0; border-top: 1px solid var(--line-strong); white-space: normal; }
+.about-links .arrow-link:last-child { border-bottom: 1px solid var(--line-strong); }
+.about-links .arrow-link span { flex: 0 0 auto; margin-left: auto; }
 
 .lightbox { width: min(94vw, 1400px); max-width: none; max-height: 94vh; padding: 0; overflow: visible; border: 1px solid var(--line-strong); background: #090a09; color: var(--ink); box-shadow: 0 30px 90px rgba(0, 0, 0, 0.72); }
 .lightbox::backdrop { background: rgba(0, 0, 0, 0.86); backdrop-filter: blur(4px); }
@@ -148,6 +151,7 @@ h2 em { color: var(--green); }
   .section-heading { grid-template-columns: 1fr; gap: 28px; margin-bottom: 52px; }
   .project-section { padding-top: 100px; padding-bottom: 100px; }
   .project-gallery { height: clamp(280px, 74vw, 430px); }
+  .about-grid { grid-template-columns: 1fr; gap: 48px; }
   .footer-links { justify-content: flex-end; }
 }
 
