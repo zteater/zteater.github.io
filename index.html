@@ -42,7 +42,9 @@
               </div>
             </div>
             <div class="project-gallery project-gallery-workout">
-              <img src="images/workout-planner.png" alt="2-5-15-30 workout planner showing four routines">
+              <button class="gallery-image-button" type="button" data-lightbox aria-label="Enlarge the 2-5-15-30 screenshot">
+                <img src="images/workout-planner.png" alt="2-5-15-30 workout planner showing four routines">
+              </button>
             </div>
           </article>
         </div>
@@ -60,8 +62,12 @@
               </div>
             </div>
             <div class="project-gallery project-gallery-kepler">
-              <img class="gallery-main" src="images/kepler-title.webp" alt="Kepler 22b title screen">
-              <img class="gallery-secondary" src="images/kepler-gameplay.webp" alt="Kepler 22b gameplay with the laser cannon defending the planet">
+              <button class="gallery-image-button gallery-main" type="button" data-lightbox aria-label="Enlarge the Kepler 22b title screen">
+                <img src="images/kepler-title.webp" alt="Kepler 22b title screen">
+              </button>
+              <button class="gallery-image-button gallery-secondary" type="button" data-lightbox aria-label="Enlarge the Kepler 22b gameplay screenshot">
+                <img src="images/kepler-gameplay.webp" alt="Kepler 22b gameplay with the laser cannon defending the planet">
+              </button>
             </div>
           </article>
         </div>
@@ -79,10 +85,16 @@
               </div>
             </div>
             <div class="project-gallery project-gallery-decay">
-              <img class="gallery-main" src="images/decay-gameplay-03.png" alt="Decay gameplay showing the hex-based world">
+              <button class="gallery-image-button gallery-main" type="button" data-lightbox aria-label="Enlarge the main Decay gameplay screenshot">
+                <img src="images/decay-gameplay-03.png" alt="Decay gameplay showing the hex-based world">
+              </button>
               <div class="gallery-stack">
-                <img src="images/decay-gameplay-02.png" alt="Decay gameplay showing a second hex-based map state">
-                <img src="images/decay-menu.png" alt="Decay title menu">
+                <button class="gallery-image-button" type="button" data-lightbox aria-label="Enlarge the second Decay gameplay screenshot">
+                  <img src="images/decay-gameplay-02.png" alt="Decay gameplay showing a second hex-based map state">
+                </button>
+                <button class="gallery-image-button" type="button" data-lightbox aria-label="Enlarge the Decay title menu">
+                  <img src="images/decay-menu.png" alt="Decay title menu">
+                </button>
               </div>
             </div>
           </article>
@@ -99,11 +111,19 @@
 
         <div class="about-grid">
           <div class="about-statement">
-            <p>I’m a husband, father, and Army veteran. I fish, keep too many plants, constantly refine my workout routines, collect hardcover sci-fi, and play board games with my family.</p>
-            <a class="inline-link about-link" href="https://hardcover.app/@zteater/books/want-to-read" target="_blank" rel="noreferrer">Books I’m hunting for <span aria-hidden="true">↗</span></a>
+            <p>I’m a husband, father, and Army veteran. I fish, keep too many plants, constantly refine my workout routines, and collect hardcover sci-fi and board games.</p>
+            <div class="card-links about-links">
+              <a class="arrow-link" href="https://hardcover.app/@zteater/books/want-to-read" target="_blank" rel="noreferrer">Books I’m hunting for <span aria-hidden="true">↗</span></a>
+              <a class="arrow-link" href="https://boardgamegeek.com/wishlist/zteater" target="_blank" rel="noreferrer">Board games I’m hunting for <span aria-hidden="true">↗</span></a>
+            </div>
           </div>
         </div>
       </section>
+
+      <dialog class="lightbox" id="image-lightbox" aria-label="Enlarged project screenshot">
+        <button class="lightbox-close" type="button" aria-label="Close enlarged screenshot">Close</button>
+        <img src="" alt="">
+      </dialog>
 
       <footer class="site-footer section-wrap">
         <div class="footer-bottom">
@@ -118,5 +138,24 @@
         </div>
       </footer>
     </main>
+    <script>
+      const lightbox = document.querySelector("#image-lightbox");
+      const lightboxImage = lightbox.querySelector("img");
+      const closeButton = lightbox.querySelector(".lightbox-close");
+
+      document.querySelectorAll("[data-lightbox]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const image = button.querySelector("img");
+          lightboxImage.src = image.src;
+          lightboxImage.alt = image.alt;
+          lightbox.showModal();
+        });
+      });
+
+      closeButton.addEventListener("click", () => lightbox.close());
+      lightbox.addEventListener("click", (event) => {
+        if (event.target === lightbox) lightbox.close();
+      });
+    </script>
   </body>
 </html>
