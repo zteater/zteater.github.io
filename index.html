@@ -1,38 +1,141 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Zack Teater</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
-                <header id="header">
-                    <h1>Zack Teater</h1>
-                    <p>Technologist&nbsp;&bull;&nbsp;Solution Architect&nbsp;&bull;&nbsp;Angler</p>
-                    <nav>
-                        <ul>
-                            <li><a href="https://www.linkedin.com/in/zteater" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                            <li><a href="https://github.com/zteater" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                            <li><a href="https://twitter.com/zteater" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                            <li><a href="https://zteater.medium.com" target="_blank" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-                        </ul>
-                    </nav>
-                </header>
-                <footer id="footer">
-                    <span class="copyright"><br/>Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
-                </footer>
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zack Teater — Engineer &amp; Game Maker</title>
+    <meta name="description" content="Engineering leader making games and useful tools when an idea won’t leave him alone.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <section class="hero section-wrap" id="top">
+        <div class="hero-pattern" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Engineer &amp; Game Maker</p>
+          <h1>Zack<br><span>Teater</span></h1>
+          <p class="hero-intro">I’m a backend engineering leader. In my own time, I make games and useful tools—usually because an idea won’t leave me alone.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore the projects <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#about">About me <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <aside class="hero-aside" aria-label="A quick introduction">
+          <figure class="hero-portrait">
+            <img src="images/zack-headshot.jpg" alt="Zack Teater smiling at the beach">
+          </figure>
+          <div class="aside-rule"></div>
+          <p class="aside-quote">I like figuring out how things work—and what happens when I change the rules.</p>
+          <div class="aside-details">
+            <div>
+              <span class="detail-label">I make</span>
+              <span class="detail-value">Games and<br>useful tools</span>
+            </div>
+            <div>
+              <span class="detail-label">Away from code</span>
+              <span class="detail-value">Family, fishing,<br>books, and plants</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="project-section project-section-workout section" id="work">
+        <div class="section-wrap">
+          <article class="project-feature">
+            <div class="project-copy">
+              <p class="eyebrow">01 / Local-first utility</p>
+              <h2>2–5–15–30<br><em>Small rules, big consistency.</em></h2>
+              <p class="project-lede">A workout planner built around the equipment I actually own and the time I actually have. Every plan is repeatable and shareable, with no accounts, tracking, or backend.</p>
+              <div class="card-links">
+                <a class="arrow-link" href="https://zteater.github.io/2-5-15-30" target="_blank" rel="noreferrer">Open the planner <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="project-gallery project-gallery-workout">
+              <img src="images/workout-planner.png" alt="2-5-15-30 workout planner showing four routines">
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-section project-section-kepler section" id="kepler">
+        <div class="section-wrap">
+          <article class="project-feature">
+            <div class="project-copy">
+              <p class="eyebrow">02 / Zak Studios</p>
+              <h2>Kepler 22b<br><em>One cannon. Endless waves.</em></h2>
+              <p class="project-lede">A fast arcade defense game set on a distant colony, with six game modes, ten alien types, seven power-ups, and escalating waves.</p>
+              <div class="card-links">
+                <a class="arrow-link" href="https://gx.games/games/z23hhv/kepler-22b/" target="_blank" rel="noreferrer">Play on GX.games <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="project-gallery project-gallery-kepler">
+              <img class="gallery-main" src="images/kepler-title.webp" alt="Kepler 22b title screen">
+              <img class="gallery-secondary" src="images/kepler-gameplay.webp" alt="Kepler 22b gameplay with the laser cannon defending the planet">
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-section project-section-decay section" id="decay">
+        <div class="section-wrap">
+          <article class="project-feature">
+            <div class="project-copy">
+              <p class="eyebrow">03 / Zak Studios</p>
+              <h2>Decay<br><em>Every step, a choice.</em></h2>
+              <p class="project-lede">A compact, atmospheric game built around a minimal hex-based world where every step changes what comes next.</p>
+              <div class="card-links">
+                <a class="arrow-link" href="https://zteater.itch.io/decay" target="_blank" rel="noreferrer">Play on itch.io <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="project-gallery project-gallery-decay">
+              <img class="gallery-main" src="images/decay-gameplay-03.png" alt="Decay gameplay showing the hex-based world">
+              <div class="gallery-stack">
+                <img src="images/decay-gameplay-02.png" alt="Decay gameplay showing a second hex-based map state">
+                <img src="images/decay-menu.png" alt="Decay title menu">
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-wrap section about-section" id="about">
+        <div class="section-heading about-heading">
+          <div>
+            <p class="eyebrow">04 / About</p>
+            <h2>Away from<br><em>the keyboard.</em></h2>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-statement">
+            <p>I’m a husband, father, and Army veteran. I fish, keep too many plants, constantly refine my workout routines, collect hardcover sci-fi, and play board games with my family.</p>
+          </div>
+          <div class="about-notes">
+            <div class="note-block">
+              <span class="detail-label">I’m usually thinking about</span>
+              <p>How parts interact. Where the edges are. What happens when the plan meets reality.</p>
+            </div>
+            <div class="note-block">
+              <span class="detail-label">Hardcover wishlist</span>
+              <p><a class="inline-link" href="https://hardcover.app/@zteater/books/want-to-read" target="_blank" rel="noreferrer">Books I’m hunting for <span aria-hidden="true">↗</span></a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer section-wrap">
+        <div class="footer-bottom">
+          <span>© 2026 Zack Teater</span>
+          <div class="footer-links">
+            <a href="https://github.com/zteater" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/zteater" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://bsky.app/profile/zteater.bsky.social" target="_blank" rel="noreferrer">Bluesky</a>
+            <a href="https://gx.games/studios/6e16434d-f974-4191-9f19-f88a25ce90e9/" target="_blank" rel="noreferrer">GX Games</a>
+            <a href="https://zteater.itch.io/" target="_blank" rel="noreferrer">itch.io</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
