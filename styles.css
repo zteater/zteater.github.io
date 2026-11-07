@@ -121,7 +121,7 @@ h2 em { color: var(--green); }
 .about-statement { max-width: 525px; }
 .about-statement p { margin-bottom: 24px; }
 .about-links { display: grid; align-content: start; }
-.about-links .arrow-link { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 18px 0; border-top: 1px solid var(--line-strong); white-space: normal; }
+.about-links .arrow-link { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 10px 0; border-top: 1px solid var(--line-strong); white-space: normal; }
 .about-links .arrow-link:last-child { border-bottom: 1px solid var(--line-strong); }
 .about-links .arrow-link span { flex: 0 0 auto; margin-left: auto; }
 
