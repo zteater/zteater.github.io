@@ -56,7 +56,7 @@ h1, h2, p { margin-top: 0; }
 h1 { max-width: 800px; margin-bottom: 30px; font-size: clamp(4rem, 9.5vw, 8.5rem); line-height: 0.87; letter-spacing: -0.09em; font-weight: 700; }
 h1 span { color: var(--orange); font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: -0.1em; }
 .hero-intro, .project-lede, .about-statement p { color: #c6c8bf; font-family: var(--sans); font-size: 18px; font-weight: 400; line-height: 1.6; letter-spacing: normal; }
-.hero-intro { max-width: 585px; margin-bottom: 34px; }
+.hero-intro { max-width: 525px; margin-bottom: 34px; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 24px; }
 .button { display: inline-flex; align-items: center; gap: 18px; padding: 13px 17px; border: 1px solid var(--line-strong); font-size: 14px; font-weight: 700; transition: background 180ms ease, border-color 180ms ease, color 180ms ease; }
 .button-primary { background: var(--orange); border-color: var(--orange); color: #17120d; }
@@ -95,7 +95,7 @@ h2 em { color: var(--green); }
 .project-copy { max-width: 525px; }
 .project-copy .eyebrow { margin-bottom: 24px; }
 .project-copy h2 { font-size: clamp(3.2rem, 5.5vw, 5.6rem); }
-.project-lede { margin: 30px 0 0; }
+.project-lede { max-width: 525px; margin: 30px 0 0; }
 .project-section-kepler .project-copy, .project-section-frontier .project-copy { order: 2; }
 .project-section-kepler .project-gallery, .project-section-frontier .project-gallery { order: 1; }
 .project-gallery { display: grid; gap: 4px; height: clamp(360px, 42vw, 500px); overflow: hidden; position: relative; border: 1px solid var(--line); background: #202426; }
@@ -121,7 +121,7 @@ h2 em { color: var(--green); }
 .about-heading { margin-bottom: 75px; }
 .about-heading h2 em { color: var(--blue); }
 .about-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr); gap: clamp(48px, 8vw, 100px); align-items: start; }
-.about-statement { max-width: 640px; }
+.about-statement { max-width: 525px; }
 .about-statement p { margin-bottom: 24px; }
 .about-links { display: grid; align-content: start; }
 .about-links .arrow-link { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 18px 0; border-top: 1px solid var(--line-strong); white-space: normal; }
