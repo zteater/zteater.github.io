@@ -95,8 +95,8 @@ h2 em { color: var(--green); }
 .project-copy .eyebrow { margin-bottom: 24px; }
 .project-copy h2 { font-size: clamp(3.2rem, 5.5vw, 5.6rem); }
 .project-lede { margin: 30px 0 0; color: var(--muted); font-size: 17px; line-height: 1.6; }
-.project-section-kepler .project-copy { order: 2; }
-.project-section-kepler .project-gallery { order: 1; }
+.project-section-kepler .project-copy, .project-section-frontier .project-copy { order: 2; }
+.project-section-kepler .project-gallery, .project-section-frontier .project-gallery { order: 1; }
 .project-gallery { display: grid; gap: 4px; height: clamp(360px, 42vw, 500px); overflow: hidden; position: relative; border: 1px solid var(--line); background: #202426; }
 .project-gallery img { display: block; width: 100%; height: 100%; min-width: 0; object-fit: cover; }
 .gallery-image-button { display: block; width: 100%; height: 100%; min-width: 0; position: relative; margin: 0; padding: 0; overflow: hidden; border: 0; background: transparent; cursor: zoom-in; }
@@ -142,7 +142,7 @@ h2 em { color: var(--green); }
 @media (max-width: 900px) {
   .project-feature { grid-template-columns: 1fr; gap: 48px; }
   .project-copy { max-width: 680px; }
-  .project-section-kepler .project-copy, .project-section-kepler .project-gallery { order: initial; }
+  .project-section-kepler .project-copy, .project-section-kepler .project-gallery, .project-section-frontier .project-copy, .project-section-frontier .project-gallery { order: initial; }
   .project-gallery { height: clamp(340px, 65vw, 500px); }
 }
 
