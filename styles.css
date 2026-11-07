@@ -65,11 +65,9 @@ h1 span { color: var(--orange); font-family: var(--serif); font-style: italic; f
 .text-link:hover { color: var(--ink); }
 .text-link span { margin-left: 5px; color: var(--green); }
 
-.hero-aside { align-self: end; padding-bottom: 62px; }
-.hero-portrait { margin: 0 0 26px; }
+.hero-aside { align-self: center; }
+.hero-portrait { margin: 0; }
 .hero-portrait img { display: block; width: 100%; aspect-ratio: 4 / 5; border: 1px solid var(--line); object-fit: cover; object-position: center 23%; filter: saturate(0.84); }
-.aside-rule { height: 1px; margin-bottom: 22px; background: var(--orange); }
-.aside-quote { max-width: 260px; margin-bottom: 0; color: var(--ink); font: italic 26px/1.2 var(--serif); }
 
 .section { padding-top: 150px; padding-bottom: 150px; }
 .section-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 0.63fr); gap: 60px; align-items: end; margin-bottom: 70px; }
@@ -148,7 +146,7 @@ h2 em { color: var(--green); }
   .hero { min-height: auto; grid-template-columns: 1fr; gap: 70px; padding-top: 72px; padding-bottom: 100px; }
   .hero-pattern { inset: 0 -55% 20% 20%; opacity: 0.16; }
   .hero-copy, .hero-aside { transform: none; }
-  .hero-aside { align-self: auto; padding-bottom: 0; max-width: 480px; }
+  .hero-aside { align-self: auto; max-width: 480px; }
   .hero-portrait img { aspect-ratio: 4 / 5; object-position: center 23%; }
   h1 { font-size: clamp(4.1rem, 18vw, 7.5rem); }
   .section { padding-top: 105px; padding-bottom: 105px; }
