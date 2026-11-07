@@ -123,6 +123,7 @@ h2 em { color: var(--green); }
   padding-top: clamp(64px, 8vh, 110px);
   padding-bottom: 0;
   scroll-snap-align: end;
+  scroll-snap-stop: always;
   background: #242424;
   border-bottom: 1px solid var(--line);
 }
@@ -182,7 +183,14 @@ h2 em { color: var(--green); }
   .section-heading { grid-template-columns: 1fr; gap: 28px; margin-bottom: 52px; }
   .project-section { padding-top: 100px; padding-bottom: 100px; }
   .project-gallery { height: clamp(280px, 74vw, 430px); }
-  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .project-section.about-section {
+    min-height: 100svh;
+    scroll-snap-align: start;
+    padding-top: clamp(32px, 5svh, 60px);
+  }
+  .about-section > .section-wrap { padding-bottom: 24px; }
+  .about-heading { margin-bottom: 38px; }
   .about-links { margin-top: 0; }
   .footer-links { justify-content: flex-end; }
 }
