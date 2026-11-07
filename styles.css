@@ -17,9 +17,9 @@
 * { box-sizing: border-box; }
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
 }
-.hero, .project-section { scroll-snap-align: start; }
+.hero, .project-section { scroll-snap-align: start; scroll-snap-stop: always; }
 body {
   min-width: 320px;
   margin: 0;
@@ -84,7 +84,7 @@ h2 em { color: var(--green); }
 .arrow-link span { display: inline-block; margin-left: 8px; color: var(--orange); font-size: 17px; transition: transform 180ms ease; }
 .arrow-link:hover span { transform: translate(4px, -2px); }
 
-.project-section { padding-top: 125px; padding-bottom: 125px; border-top: 1px solid var(--line); }
+.project-section { padding-top: 100px; padding-bottom: 125px; border-top: 1px solid var(--line); }
 .project-section-kepler { background: var(--panel); }
 .project-section-decay { background: #242424; }
 .project-section-kepler h2 em { color: var(--green); }
@@ -92,7 +92,7 @@ h2 em { color: var(--green); }
 .project-section-frontier { border-bottom: 1px solid var(--line); background: var(--panel); }
 .project-section-frontier h2 em { color: var(--orange); }
 .project-gallery-frontier { grid-template-columns: 1.36fr 0.64fr; }
-.project-feature { display: grid; grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr); gap: clamp(48px, 7vw, 92px); align-items: center; }
+.project-feature { display: grid; grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr); gap: clamp(48px, 7vw, 92px); align-items: start; }
 .project-copy { max-width: 525px; }
 .project-copy .eyebrow { margin-bottom: 24px; }
 .project-copy h2 { font-size: clamp(3.2rem, 5.5vw, 5.6rem); }
@@ -120,7 +120,7 @@ h2 em { color: var(--green); }
 
 .project-section.about-section {
   min-height: 0;
-  padding-top: clamp(64px, 8vh, 110px);
+  padding-top: 100px;
   padding-bottom: 0;
   scroll-snap-align: end;
   scroll-snap-stop: always;
@@ -181,13 +181,13 @@ h2 em { color: var(--green); }
   h1 { font-size: clamp(4.1rem, 18vw, 7.5rem); }
   .section { padding-top: 105px; padding-bottom: 105px; }
   .section-heading { grid-template-columns: 1fr; gap: 28px; margin-bottom: 52px; }
-  .project-section { padding-top: 100px; padding-bottom: 100px; }
+  .project-section { padding-top: 64px; padding-bottom: 100px; }
   .project-gallery { height: clamp(280px, 74vw, 430px); }
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .project-section.about-section {
     min-height: 100svh;
     scroll-snap-align: start;
-    padding-top: clamp(32px, 5svh, 60px);
+    padding-top: 64px;
   }
   .about-section > .section-wrap { padding-bottom: 24px; }
   .about-heading { margin-bottom: 38px; }
