@@ -99,7 +99,7 @@ h2 em { color: var(--green); }
 .project-lede { max-width: 525px; margin: 30px 0 0; }
 .project-section-kepler .project-copy, .project-section-frontier .project-copy { order: 2; }
 .project-section-kepler .project-gallery, .project-section-frontier .project-gallery { order: 1; }
-.project-gallery { display: grid; gap: 4px; height: clamp(360px, 42vw, 500px); overflow: hidden; position: relative; border: 1px solid var(--line); background: #202426; }
+.project-gallery { display: grid; gap: 4px; height: clamp(280px, min(42vw, 55svh), 500px); overflow: hidden; position: relative; border: 1px solid var(--line); background: #202426; }
 .project-gallery img { display: block; width: 100%; height: 100%; min-width: 0; object-fit: cover; }
 .gallery-image-button { display: block; width: 100%; height: 100%; min-width: 0; position: relative; margin: 0; padding: 0; overflow: hidden; border: 0; background: transparent; cursor: zoom-in; }
 .gallery-image-button img { transition: transform 240ms ease, filter 240ms ease; }
@@ -154,7 +154,7 @@ h2 em { color: var(--green); }
   .project-feature { grid-template-columns: 1fr; gap: 48px; }
   .project-copy { max-width: 680px; }
   .project-section-kepler .project-copy, .project-section-kepler .project-gallery, .project-section-frontier .project-copy, .project-section-frontier .project-gallery { order: initial; }
-  .project-gallery { height: clamp(340px, 65vw, 500px); }
+  .project-gallery { height: clamp(280px, min(65vw, 50svh), 460px); }
 }
 
 @media (max-width: 800px) {
@@ -181,8 +181,12 @@ h2 em { color: var(--green); }
   h1 { font-size: clamp(4.1rem, 18vw, 7.5rem); }
   .section { padding-top: 105px; padding-bottom: 105px; }
   .section-heading { grid-template-columns: 1fr; gap: 28px; margin-bottom: 52px; }
-  .project-section { padding-top: 64px; padding-bottom: 100px; }
-  .project-gallery { height: clamp(280px, 74vw, 430px); }
+  .project-section { padding-top: 64px; padding-bottom: 36px; }
+  .project-section:not(.about-section) { min-height: 100svh; }
+  .project-feature { gap: clamp(22px, 3svh, 32px); }
+  .project-gallery { height: clamp(210px, 32svh, 290px); }
+  .project-lede { margin-top: 22px; }
+  .card-links { margin-top: 20px; padding-top: 16px; }
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .project-section.about-section {
     min-height: 100svh;
