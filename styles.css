@@ -143,10 +143,11 @@ h2 em { color: var(--green); }
 .about-heading { margin-bottom: 75px; }
 .about-heading h2 em { color: var(--blue); }
 .about-grid { display: block; }
-.about-statement { max-width: 525px; }
+.about-statement { max-width: 600px; }
 .about-statement p { margin-bottom: 0; }
 .about-statement a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--blue); text-underline-offset: 4px; text-decoration-thickness: 1px; transition: color 180ms ease; }
 .about-statement a:hover { color: var(--blue); }
+.about-statement a[href*="boardgamegeek.com"] { white-space: nowrap; }
 
 .lightbox { width: min(94vw, 1400px); max-width: none; max-height: 94vh; max-height: 94svh; padding: 0; overflow: visible; border: 1px solid var(--line-strong); background: #090a09; color: var(--ink); box-shadow: 0 30px 90px rgba(0, 0, 0, 0.72); touch-action: pan-y; }
 .lightbox::backdrop { background: rgba(0, 0, 0, 0.86); backdrop-filter: blur(4px); }
